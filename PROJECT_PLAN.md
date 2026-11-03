@@ -49,10 +49,10 @@ State evolution under quantum channel $\mathcal{E}(\rho) = \sum_k K_k \rho K_k^\
   where $P_i \in \{I, X, Y, Z\}^{\otimes 2} \setminus \{I \otimes I\}$.
 
 ### 4. Reward Formulation
-At each step $t$:
-$R_t = \mathcal{F}(\rho_t, \sigma_{\text{target}}) - \mathcal{F}(\rho_{t-1}, \sigma_{\text{target}}) - c_{\text{gate}} - c_{\text{CNOT\_extra}}$
+At each step $\text{t}$:
+$ \text{R}_{\text{t}} = \mathcal{F}(\rho_t, \sigma_{\text{target}}) - \mathcal{F}(\rho_{t-1}, \sigma_{\text{target}}) - c_{\text{gate}} - c_{\text{CNOT\_extra}} $
 Terminal reward:
-$R_{\text{terminal}} = +10 \cdot \mathbf{1}_{\mathcal{F} \ge \mathcal{F}_{\text{threshold}}}$
+$ \text{R}_{\text{terminal}} = +10 \cdot \mathbf{1}_{\mathcal{F} \ge \mathcal{F}_{\text{threshold}}} $
 where mixed state fidelity is $\mathcal{F}(\rho, |\psi\rangle\langle\psi|) = \langle\psi|\rho|\psi\rangle$.
 
 ---
