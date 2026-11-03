@@ -32,8 +32,8 @@ q_rl/
 
 ### 1. State Space ($\mathcal{S}$)
 For an $n$-qubit system, the quantum state is represented as a mixed state density matrix $\rho \in \mathbb{C}^{2^n \times 2^n}$:
-- Properties: $\rho^\dagger = \rho$, $\operatorname{Tr}(\rho) = 1$, $\rho \ge 0$.
-- Observation vector: Flattened real and imaginary components of $\rho$, or expectation values of Pauli basis strings $\langle \sigma_i \rangle = \operatorname{Tr}(\rho \sigma_i)$. For $n=2$ qubits, this is a 16-dimensional real vector.
+- Properties: $\rho^\dagger = \rho$, $\mathrm{Tr}(\rho) = 1$, $\rho \ge 0$.
+- Observation vector: Flattened real and imaginary components of $\rho$, or expectation values of Pauli basis strings $\langle \sigma_i \rangle = \mathrm{Tr}(\rho \sigma_i)$. For $n=2$ qubits, this is a 16-dimensional real vector.
 
 ### 2. Action Space ($\mathcal{A}$)
 Discrete gate dictionary:
@@ -50,9 +50,9 @@ State evolution under quantum channel $\mathcal{E}(\rho) = \sum_k K_k \rho K_k^\
 
 ### 4. Reward Formulation
 At each step $t$:
-$$R_t = \mathcal{F}(\rho_t, \sigma_{\text{target}}) - \mathcal{F}(\rho_{t-1}, \sigma_{\text{target}}) - c_{\text{gate}} - c_{\text{CNOT\_extra}}$$
+$R_t = \mathcal{F}(\rho_t, \sigma_{\text{target}}) - \mathcal{F}(\rho_{t-1}, \sigma_{\text{target}}) - c_{\text{gate}} - c_{\text{CNOT\_extra}}$
 Terminal reward:
-$$R_{\text{terminal}} = +10 \cdot \mathbf{1}_{\mathcal{F} \ge \mathcal{F}_{\text{threshold}}}$$
+$R_{\text{terminal}} = +10 \cdot \mathbf{1}_{\mathcal{F} \ge \mathcal{F}_{\text{threshold}}}$
 where mixed state fidelity is $\mathcal{F}(\rho, |\psi\rangle\langle\psi|) = \langle\psi|\rho|\psi\rangle$.
 
 ---
