@@ -1,0 +1,32 @@
+{
+  "target_circuit": "bell",
+  "target_qubits": 2,
+  "fidelity": 0.4999999999999999,
+  "total_gates": 12,
+  "cnot_count": 0,
+  "history": [
+    "Rx_neg_pi2(q0)",
+    "Rx_neg_pi2(q0)",
+    "Rx_neg_pi2(q0)",
+    "Ry_pi2(q0)",
+    "Ry_pi2(q0)",
+    "Ry_pi2(q0)",
+    "Ry_pi2(q0)",
+    "Ry_pi2(q0)",
+    "Ry_pi2(q0)",
+    "Ry_pi2(q0)",
+    "Ry_pi2(q0)",
+    "Rx_neg_pi2(q0)"
+  ],
+  "training_time_seconds": 2.1837987899780273,
+  "final_controller_breakdown": {
+    "controller_qubits": 4,
+    "ansatz_layers": 2,
+    "quantum_variational_params": 24,
+    "classical_pre_net_params": 68,
+    "classical_dueling_heads_params": 2194,
+    "quantum_feature_dim": 10,
+    "total_params": 2286
+  },
+  "expansions": []
+}

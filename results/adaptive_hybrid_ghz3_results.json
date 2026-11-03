@@ -1,0 +1,32 @@
+{
+  "target_circuit": "ghz3",
+  "target_qubits": 3,
+  "fidelity": 0.4999999999999999,
+  "total_gates": 12,
+  "cnot_count": 12,
+  "history": [
+    "CNOT(c2->t0)",
+    "CNOT(c2->t0)",
+    "CNOT(c2->t0)",
+    "CNOT(c2->t0)",
+    "CNOT(c2->t0)",
+    "CNOT(c2->t0)",
+    "CNOT(c2->t0)",
+    "CNOT(c2->t0)",
+    "CNOT(c2->t0)",
+    "CNOT(c2->t0)",
+    "CNOT(c2->t0)",
+    "CNOT(c2->t0)"
+  ],
+  "training_time_seconds": 1.0569310188293457,
+  "final_controller_breakdown": {
+    "controller_qubits": 6,
+    "ansatz_layers": 3,
+    "quantum_variational_params": 54,
+    "classical_pre_net_params": 390,
+    "classical_dueling_heads_params": 3965,
+    "quantum_feature_dim": 21,
+    "total_params": 4409
+  },
+  "expansions": []
+}

@@ -1,0 +1,35 @@
+{
+  "circuit": "redundant_teleportation",
+  "input_cnot_count": 4,
+  "input_total_gates": 6,
+  "depth_discount": 0.95,
+  "standard_dqn": {
+    "fidelity": 0.9999999999999993,
+    "total_gates": 3,
+    "cnot_count": 1,
+    "history": [
+      "Ry_pi2(q0)",
+      "CNOT(c0->t2)",
+      "H(q1)"
+    ]
+  },
+  "hybrid_dqn": {
+    "fidelity": 0.49999999999999956,
+    "total_gates": 12,
+    "cnot_count": 0,
+    "history": [
+      "H(q1)",
+      "H(q0)",
+      "Rz_pi2(q0)",
+      "Rx_pi2(q0)",
+      "X(q1)",
+      "X(q1)",
+      "X(q1)",
+      "X(q1)",
+      "X(q1)",
+      "X(q1)",
+      "X(q1)",
+      "X(q1)"
+    ]
+  }
+}

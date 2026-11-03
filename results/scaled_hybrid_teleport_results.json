@@ -1,0 +1,53 @@
+{
+  "circuit": "redundant_teleportation",
+  "episodes": 200,
+  "scaled_hybrid": {
+    "agent_qubits": 6,
+    "ansatz_layers": 3,
+    "use_data_reuploading": true,
+    "fidelity": 0.9999999999999993,
+    "gates": 3,
+    "cnots": 1,
+    "history": [
+      "H(q1)",
+      "Ry_pi2(q0)",
+      "CNOT(c0->t2)"
+    ],
+    "parameter_breakdown": {
+      "quantum_variational_params": 54,
+      "classical_pre_net_params": 390,
+      "classical_dueling_heads_params": 3965,
+      "quantum_feature_dim": 21,
+      "total_params": 4409
+    }
+  },
+  "classical_dqn": {
+    "fidelity": 0.9999999999999993,
+    "gates": 3,
+    "cnots": 1,
+    "history": [
+      "Ry_pi2(q2)",
+      "CNOT(c2->t0)",
+      "H(q1)"
+    ]
+  },
+  "hybrid_4q_baseline": {
+    "fidelity": 0.24999999999999978,
+    "gates": 12,
+    "cnots": 0,
+    "history": [
+      "Rx_pi2(q1)",
+      "Rz_pi2(q1)",
+      "Rx_pi2(q1)",
+      "Rx_pi2(q1)",
+      "Rx_pi2(q1)",
+      "Rx_pi2(q1)",
+      "Rx_pi2(q1)",
+      "X(q0)",
+      "Rx_pi2(q1)",
+      "Rx_neg_pi2(q0)",
+      "Rx_neg_pi2(q0)",
+      "Ry_pi2(q1)"
+    ]
+  }
+}
