@@ -10,7 +10,7 @@ A 4-qubit **Parameterized Quantum Circuit (PQC)** in PennyLane serves as the aut
 
 1. **Open-System Density Matrix Environment (`envs/quantum_state_env.py`)**:
    - Exact simulation of density matrices $\rho \in \mathbb{C}^{2^n \times 2^n}$ under Kraus depolarizing noise.
-   - Observation space: 15-dimensional (2Q) or 63-dimensional (3Q) real Pauli expectation values $\langle P_i \rangle = \operatorname{Tr}(\rho P_i)$.
+   - Observation space: 15-dimensional (2Q) or 63-dimensional (3Q) real Pauli expectation values $\langle P_i \rangle = \mathrm{Tr}(\rho P_i)$.
 2. **Hybrid Quantum Policy & Scaled Architectures (`models/hybrid_q_agent.py`, `models/scaled_hybrid_q_agent.py`, `models/adaptive_hybrid_q_agent.py`)**:
    - 4-qubit base PennyLane variational quantum ansatz with adjoint differentiation (24 quantum parameters).
    - **Scaled 6-Qubit PQC with Data Re-uploading**: Expands the Fourier frequency spectrum and relieves the classical-to-quantum state bottleneck ($64 \to 6$) with 54 quantum parameters.
