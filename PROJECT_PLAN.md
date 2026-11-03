@@ -79,6 +79,3 @@ where mixed state fidelity is $\mathcal{F}(\rho, |\psi\rangle\langle\psi|) = \la
    - Analyze whether the noise-aware agent finds circuits that minimize CNOT applications or replace CNOTs with combinations of single-qubit gates or alternative paths.
 
 ---
-
-## Proposed Immediate Step
-Begin **Phase 1**: build `envs/quantum_state_env.py` and `envs/noise_models.py` with unit tests verifying density matrix evolution, Kraus channel correctness, and fidelity calculations.
